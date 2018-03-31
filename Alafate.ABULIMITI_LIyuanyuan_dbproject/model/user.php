@@ -18,10 +18,10 @@ function get($id)
 	try 
     {	 
     $db = \Db::dbc();
-    $sql = "SELECT * FROM USER WHERE IDU='$id'";
+    $sql = "SELECT * FROM USER WHERE IDU='$id'";//select语句
 	  $sth = $db->prepare($sql);
 	  $sth->execute();
-    $row = $sth->fetch();
+    $row = $sth->fetch();//抓取结果
 	  if($row==false)
 	  {
 		  return NULL;
@@ -33,7 +33,7 @@ function get($id)
         "name" => $row ['NAMEU'],
         "password" => $row['PWD'],
         "email" => $row['EMAIL'],
-        "avatar" => $row['AVATAR']);
+        "avatar" => $row['AVATAR']);//将结果分别放进array中 并打印
       }
     }
     catch (\PDOException $e)
