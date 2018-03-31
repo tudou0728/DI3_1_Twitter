@@ -1,2 +1,2 @@
-DI3_1_Twitter: fate_yuanyuan_Twitter
+# DI3_1_Twitter
 Alafate.ABULIMITI_LIyuanyuan_dbproject-BDprojet
